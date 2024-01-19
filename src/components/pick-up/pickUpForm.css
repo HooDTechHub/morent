@@ -1,0 +1,218 @@
+.pickUp__form,
+.dropOff__form {
+    width: 90%;
+    min-width: 327px;
+    max-width: 327px;
+    height: 120px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    background-color: var(--main-bg-color);
+
+    padding: 1rem 1.6rem;
+    border-radius: 10px;
+}
+
+.dropOff__form {
+    margin-top: -13px;
+}
+
+.form__title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.form__title span {
+    display: inline-block;
+
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 4px solid #bbd3f8;
+    margin-right: .8rem;
+
+    background-color: #3563E9;
+}
+
+.form__title h3 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+    color: var(--second-color);
+}
+
+.form__inputs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    width: 100%;
+    height: 80px;
+}
+
+/* location item */
+
+.input__location {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+    flex: 1;
+
+    height: 60px;
+
+    border-right: 1px solid #C3D4E9;
+    padding: .1rem 1rem .1rem .1rem;
+}
+
+.input__location label,
+.input__date label,
+.input__time label {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+    color: var(--second-color);
+}
+
+.input__location select {
+    background-color: transparent;
+    border: none;
+    outline: none;
+
+    width: 80px;
+    height: 30px;
+
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--third-color);
+
+    /* appearance: none; */
+    cursor: pointer;
+}
+
+.input__location select::-ms-expand {
+    display: none;
+}
+
+/* date item */
+.input__date {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    flex: 1;
+    height: 60px;
+
+    border-right: 1px solid #C3D4E9;
+    padding: .1rem 1.5rem .1rem 1.5rem;
+}
+
+.example-custom-input {
+    background: none;
+    color: #90A3BF;
+    border: none;
+    height: 30px;
+    width: 100px;
+
+    padding: 0 .3rem;
+    font-size: 1.1rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.example-custom-input .arrow {
+    border: solid #90A3BF;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+/* time item */
+.input__time {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    flex: 1;
+    height: 60px;
+
+    padding: .1rem 1.5rem .1rem 1.5rem;
+}
+
+.time-input {
+    width: 25px;
+    height: 30px;
+}
+
+.time-input input {
+    outline: none;
+    height: 30px;
+    width: 20px;
+    padding: 0 .3rem;
+    font-size: 1.2rem;
+    color: #90A3BF;
+}
+
+.react-time-picker__wrapper {
+    width: 60px !important;
+    border: none !important;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.react-time-picker__inputGroup {
+    width: 100% !important;
+}
+
+@media screen and (min-width: 768px) {
+    .dropOff__form {
+        margin-top: 0;
+    }
+}
+
+@media screen and (min-width: 850px) {
+
+    .pickUp__form,
+    .dropOff__form {
+        width: 90%;
+        min-width: 350px;
+        max-width: 350px;
+        height: 120px;
+
+        padding: 1rem 1.6rem;
+    }
+}
+
+@media screen and (min-width: 1366px) {
+
+    .pickUp__form,
+    .dropOff__form {
+        width: 100%;
+        min-width: 582px;
+        max-width: 582px;
+        height: 136px;
+
+        padding: 1rem 1.6rem;
+    }
+
+    .input__location,
+    .input__date,
+    .input__time{
+        padding: .1rem 2.5rem;
+    }
+}
